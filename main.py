@@ -14,14 +14,14 @@ while(True):
     #开始构造返回信息
     info_text=''
     info_text+='<strong>HostName:</strong> '+RunInShell('hostname') #vps hostname
-    info_text+='<strong>CPU Usage:</strong> '+CPUUsage()+'\n' #cpu usage
+    info_text+='<strong>CPU:</strong> '+CPUUsage()+'%\n' #cpu usage
     #处理内存使用
     mem_info=CacheUsage()
     mem_total=mem_info[0]
     mem_free=mem_info[1]
     mem_percent=mem_info[2]
-    info_text+='<strong>Memory Usage:</strong> '+CPUUsage()+'\n' #cpu usage
-    info_text+='<strong>Task Usage:</strong> '+'总任务数：'+TaskUsageTotal()+'  正在运行：'+TaskUsageNow()+'\n' #task usage
+    info_text+='<strong>Memory:</strong> '+'总内存：'+mem_total+'MB  未使用：'+mem_free+'MB  占用比：'+mem_percent+'\n' #memory usage
+    info_text+='<strong>Task:</strong> '+'总任务数：'+TaskUsageTotal()+'  正在运行：'+TaskUsageNow()+'\n' #task usage
 
 
 
