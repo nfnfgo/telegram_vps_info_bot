@@ -64,14 +64,14 @@ def CacheUsage():
     mem_usage_info_total=mem_usage_info_total.replace(':','')
     mem_usage_info_total=mem_usage_info_total.replace('MiBMem','')
     mem_usage_info_total=mem_usage_info_total.replace('total','')
-    #处理可用内存
-    mem_usage_info_free=mem_usage_info_list[1]
-    mem_usage_info_free=mem_usage_info_free.replace(' ','')
-    mem_usage_info_free=mem_usage_info_free.replace('free','')
+    #处理已使用内存
+    mem_usage_info_used=mem_usage_info_list[2]
+    mem_usage_info_used=mem_usage_info_used.replace(' ','')
+    mem_usage_info_used=mem_usage_info_used.replace('used','')
     #计算使用百分比
-    mem_usage_info_used=float(mem_usage_info_total)-float(mem_usage_info_free)
     percent=format((float(mem_usage_info_used)/float(mem_usage_info_total))*100,'.1f')
     percent=str(percent)+'%'
+    mem_usage_info_free=float(mem_usage_info_total)-float(mem_usage_info_used)
     #构造返回数列
     return_list=[str(mem_usage_info_total),str(mem_usage_info_free),percent]
     return return_list

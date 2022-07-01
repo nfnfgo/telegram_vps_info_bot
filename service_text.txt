@@ -1,0 +1,13 @@
+Bt-Panel (pid 3680) already running
+Bt-Task (pid 25742) already running
+ SUCCESS! MySQL running (22608)
+netconsole module not loaded
+Configured devices:
+lo eth0
+Currently active devices:
+lo eth0
+nginx (pid 22273 22272 8596) already running.
+php-fpm (pid 5323) is running...
+php-fpm (pid 15603) is running...
+php-fpm (pid 8998) is running...
+Pure-FTPd is running.
