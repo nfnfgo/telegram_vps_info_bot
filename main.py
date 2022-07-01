@@ -7,6 +7,8 @@ from sys_info_func import CPUUsage
 from sys_info_func import TaskUsageTotal
 from sys_info_func import TaskUsageNow
 from sys_info_func import CacheUsage
+from config import sepa
+from service_monitor_func import ServStat
 
 
 
@@ -23,6 +25,9 @@ while(True):
     info_text+='<strong>Memory:</strong> '+'总内存：'+mem_total+'MB  未使用：'+mem_free+'MB  占用比：'+mem_percent+'\n' #memory usage
     info_text+='<strong>Task:</strong> '+'总任务数：'+TaskUsageTotal()+'  正在运行：'+TaskUsageNow()+'\n' #task usage
 
+    #Service Montinor Function
+    info_text+=sepa+'\n'
+    info_text+=ServStat()+'\n'
 
 
     #使用Bot发送生成的信息
