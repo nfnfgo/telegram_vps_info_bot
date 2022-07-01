@@ -1,5 +1,7 @@
-import time
-import requests
+with open('config.py','r') as f:
+    text=f.read()
 
-res=requests.get('https://afdian.net/@oysuminasai')
-print(res.text)
+text=text.replace('\n','')
+
+with open('config.py','w') as f:
+    f.write(text)

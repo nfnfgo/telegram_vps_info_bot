@@ -1,3 +1,4 @@
+[信息] Aria2 (PID 26754) 正在运行...
 Bt-Panel (pid 3680) already running
 Bt-Task (pid 25742) already running
  SUCCESS! MySQL running (22608)
