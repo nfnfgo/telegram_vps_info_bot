@@ -2,11 +2,11 @@ import subprocess
 import time
 import telebot
 
-from func import RunInShell
-from func import CPUUsage
-from func import TaskUsageTotal
-from func import TaskUsageNow
-from func import CacheUsage
+from sys_info_func import RunInShell
+from sys_info_func import CPUUsage
+from sys_info_func import TaskUsageTotal
+from sys_info_func import TaskUsageNow
+from sys_info_func import CacheUsage
 
 
 
