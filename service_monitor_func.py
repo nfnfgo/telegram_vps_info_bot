@@ -17,5 +17,13 @@ def RunInShell(comm):
 def ServStat():
     # Read config in config.py
     serv_dict=config.service_dict # "serv" means "service"
+
+    # get service status text in by using shell command
     serv_res_text=RunInShell('service --status-all')
+
+    # Use the  shell respone to check the service status
+    for serv_item in serv_dict.keys():
+        check_list=serv_dict[serv_item]
+        print(check_list)
+
     return serv_res_text
