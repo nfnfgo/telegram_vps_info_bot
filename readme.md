@@ -36,6 +36,6 @@ You can add your own service by rewriting the variable `service_dict` in `config
 
 |Function|Introduction|Status|
 |:-----:|:-----|:----|
-|BetterFileStructure|-|Not Start|
+|BetterFileStructure|Program File Struct Update|Not Start|
 |Auto-Restart|When Service-Monitor detect a service-down situation, Using shell commend to restart the service and send a restart log.|Not Start|
-
+|Auto Detect Sys|When starting, detect the system environment automatically and choose a right config and setting.(Now we just offer Ubuntu and CentOS version)|Not Start|
