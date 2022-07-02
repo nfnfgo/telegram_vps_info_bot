@@ -18,5 +18,5 @@ This function can check the service status and tells whether the service are run
 
 ### Add Service
 
-You can add your own service by rewriting the variable `service_dict` `config.py`
+You can add your own service by rewriting the variable `service_dict` in `config.py`
 
