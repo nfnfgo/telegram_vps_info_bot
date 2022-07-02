@@ -62,7 +62,7 @@ def CacheUsage():
     mem_usage_info_total=mem_usage_info_list[0]
     mem_usage_info_total=mem_usage_info_total.replace(' ','')
     mem_usage_info_total=mem_usage_info_total.replace(':','')
-    mem_usage_info_total=mem_usage_info_total.replace('MiBMem','')
+    mem_usage_info_total=mem_usage_info_total.replace('KiBMem','')
     mem_usage_info_total=mem_usage_info_total.replace('total','')
     #处理已使用内存
     mem_usage_info_used=mem_usage_info_list[2]
