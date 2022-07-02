@@ -8,6 +8,8 @@ from sys_info_func import TaskUsageTotal
 from sys_info_func import TaskUsageNow
 from sys_info_func import CacheUsage
 from config import sepa
+from config import bot_token
+from config import sleep_time
 from service_monitor_func import ServStat
 
 
@@ -30,7 +32,8 @@ while(True):
     info_text+=ServStat()+'\n'
 
 
+
     #使用Bot发送生成的信息
-    bot = telebot.TeleBot("5050467713:AAFQultsmN1YdFnp9MVZiBakXSEXVr1ED6M", parse_mode='HTML')
+    bot = telebot.TeleBot(bot_token, parse_mode='HTML')
     bot.send_message(975140440,info_text)
-    time.sleep(3)
+    time.sleep(sleep_time)

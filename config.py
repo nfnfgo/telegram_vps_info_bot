@@ -3,3 +3,6 @@ service_dict={'Aria2':['信息','Aria2','正在运行'],'Bt-Panel':['Bt-Panel','
 
 # Use by main program, set a style Separator
 sepa='————————————————'
+
+bot_token='5050467713:AAFQultsmN1YdFnp9MVZiBakXSEXVr1ED6M'
+sleep_time=30
